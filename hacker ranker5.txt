@@ -1,0 +1,14 @@
+#while loop program:
+    n = int(input())
+    i = 1
+    while(i <= n):
+        print(i,end='')
+        i+=1
+
+output:
+" " "input (stdin)
+3
+Your Output (stdout)
+123
+Expected Output
+123" " "

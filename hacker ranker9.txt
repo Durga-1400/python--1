@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    input()==print(sorted(list(set(map(int,input().split()))))[-2])
+
+output:
+"""Input (stdin)
+5
+2 3 6 6 5
+Your Output (stdout)
+5
+Expected Output
+5"""

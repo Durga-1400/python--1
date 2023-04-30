@@ -1,0 +1,43 @@
+#slicing program:
+    N = int(input())
+    l = []
+    for i in range(N):
+        s = list(input().split())
+        if s[0]=='insert':
+            l.insert(int(s[1]),int(s[2]))
+        if s[0]=='remove':
+            l.remove(int(s[1]))
+        if s[0]=='append':
+            l.append(int(s[1]))
+        if s[0]=='sort':
+            l.sort()
+        if s[0]=='pop':
+            l.pop()
+        if s[0]=='reverse':
+            l.reverse()     
+        if s[0]=='print':
+            print(l)
+
+output:
+" " "Input (stdin)
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+Your Output (stdout)
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]
+Expected Output
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]"  " "

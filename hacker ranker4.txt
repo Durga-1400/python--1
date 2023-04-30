@@ -1,0 +1,21 @@
+# importing the module program:
+import calendar
+
+# function
+def is_leap(year):
+    
+    leap = False
+    
+    # checking for leap year
+    if calendar.isleap(year):
+        leap = True
+    
+    return leap
+
+output:
+" " "Input (stdin)
+1990
+Your Output (stdout)
+False
+Expected Output
+False" " "

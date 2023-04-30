@@ -1,0 +1,15 @@
+#list program:
+    n = int(input())
+    integer_list = map(int, input().split())
+    
+    
+    print(hash(tuple(integer_list)))    
+
+output:
+" " "Input (stdin)
+2
+1 2
+Your Output (stdout)
+3713081631934410656
+Expected Output
+3713081631934410656" " "

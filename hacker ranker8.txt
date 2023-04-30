@@ -1,0 +1,30 @@
+#list program:
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    
+    lsti = []
+    lstj = []
+    lstk = []
+    lstc = []
+
+    lsti = [i for i in range(x+1)]
+    lstj = [j for j in range(y+1)]
+    lstk = [k for k in range(z+1)]
+
+    lstc =[[i, j, k] for i in lsti for j in lstj for k in lstk if i+j+k!=n]
+
+
+    print(lstc)
+
+output:
+"""Input (stdin)
+1
+1
+1
+2
+Your Output (stdout)
+[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+Expected Output
+[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]"""
